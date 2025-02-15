@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Italiana&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nerko+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  width: 80%;
+  height: auto;
+}
+.special {
+  height: 100vh;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  border-radius: 20px;
+  width: 60%;
+  height: auto;
+  box-shadow: 10px 10px 10px grey;
+  background: #be185d;
+}
+.input_container {
+  width: 80%;
+  height: auto;
+}
+/* input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  height: 40px;
+  padding: 5px 20px;
+  border: 2px solid #831843;
+  background-color: #fce7f3;
+  font-family: "Merriweather Sans", serif;
+  font-weight: 500;
+  font-style: italic;
+  outline: none;
+} */
+/* input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="number"] {
+  margin-top: 20px;
+} */
+.login_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-top: 30px;
+  width: 100%;
+  padding: 8px 20px;
+  background-color: #831843;
+  border: 2px solid #be185d;
+  font-weight: 500;
+  font-family: "Merriweather Sans", serif;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.login_btn:hover {
+  background-color: #500724;
+}
+.login_signup_logo {
+  color: #fff;
+  font-size: 18px;
+}
+.not_registred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 15px;
+  gap: 5px;
+}
+.create_account {
+  color: #0284c7;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  width: 100%;
+  height: 70px;
+  background: #be185d;
+}
+.logo_container {
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid #fff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+.logo_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.name_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+  transition: 0.5s linear;
+}
+.name:hover {
+  color: #e2e8f0;
+}
+.logout_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Merriweather Sans", serif;
+  font-weight: 500;
+  background-color: #831843;
+  border: 1px solid #500724;
+  color: #fff;
+  transition: 0.5s linear;
+}
+.logout_btn:hover {
+  background-color: #500724;
+}
+.navbar_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid #000; */
+  background-color: #c52f6d;
+  box-shadow: 5px 5px 5px grey;
+}
+.navbar_ul {
+  display: flex;
+  gap: 50px;
+}
+.navbar_li {
+  list-style: none;
+}
+.navbar_a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s linear;
+}
+.navbar_a:hover {
+  color: #e2e8f0;
+}
+.main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid #000; */
+}
+.main_container_one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #000; */
+  background-color: #c52f6d;
+}
+.ul_main {
+  display: block;
+  margin: 0 auto;
+}
+.li_main {
+  list-style: none;
+  margin-top: 40px;
+  text-align: center;
+  box-shadow: 1px 1px 1px #500724;
+}
+.a_main {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s linear;
+}
+.a_main:hover {
+  color: #e2e8f0;
+}
+
+.main_container_two {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.main_container_two::-webkit-scrollbar {
+  width: 10px;
+}
+.main_container_two::-webkit-scrollbar-thumb {
+  background: #500724;
+}
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 80px;
+  background-color: #be185d;
+}
+.social_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.footer_icon {
+  font-size: 30px;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.footer_icon:hover {
+  transform: scale(1.2);
+}
+.under_footer_copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  height: auto;
+  padding-top: 20px;
+  background-color: #be185d;
+  /* box-shadow: 0 40px 40px 40px grey; */
+  color: #fff;
+}
+.list_user_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #be185d;
+  margin-top: 30px;
+  text-shadow: 10px 10px 10px grey;
+}
+.table {
+  margin: 30px auto 0 auto;
+  width: 99%;
+  height: auto;
+  border-collapse: collapse;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  gap: 10px;
+}
+.td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather Sans", serif;
+  margin: 0 auto;
+}
+.th {
+  font-family: "Merriweather Sans", serif;
+}
+.user_btn_table {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.view {
+  color: #16a34a;
+}
+.del {
+  color: red;
+}
+.upd {
+  color: orange;
+}
+.pic_name_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  /* border: 1px solid #000; */
+  width: 600px;
+  height: 200px;
+  margin-top: 20px;
+  gap: 15px;
+}
+.pic_container {
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid #000; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pic_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.name_profile_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+  width: 200px;
+  height: 100px;
+}
+.name_profile {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #be185d;
+  width: 100%;
+}
+.table_my_profile {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
+}
+.td_my_profile_container {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.td_my_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add_user {
+  width: 100%;
+}
+.form_container_add_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.checkbox_container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  color: #e2e8f0;
+  margin-top: 30px;
+}
+.modify_color_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #c52f6d;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+.select {
+  width: 200px;
+  height: 38px;
+  margin-right: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.modify_color_btn {
+  width: 100px;
+  background-color: #831843;
+  border: 2px solid #be185d;
+  padding: 8px 20px;
+  font-weight: 500;
+  font-family: "Merriweather Sans", serif;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.modify_color_btn:hover {
+  background-color: #500724;
+}
+.signup_toast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Merriweather Sans", serif;
+}
+.message {
+  text-align: center;
+  color: orange;
+}
+.error_list_container {
+  width: 100%;
+  background-color: #fff;
+  height: auto;
+}
+.error_list {
+  margin-top: 5px;
+  text-align: center;
+  list-style: none;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+.home_text {
+  font-size: 50px;
+  font-style: italic;
+}
+.home_span {
+  color: #be185d;
+}
+.user_detail_container {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+.img_detail_name_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  width: 90%;
+  height: 40%;
+  /* border: 1px solid #000; */
+}
+.img_detail_container {
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid #000; */
+  border-radius: 50%;
+}
+.img_detail_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.name_detail_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+  width: 250px;
+  height: 200px;
+}
+.name_detail_name {
+  font-size: 20px;
+  color: #831843;
+}
+.plus_detail_info_container {
+  width: 100%;
+  height: 300px;
+}
+.plus_detail_info {
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  /* border: 1px solid #000; */
+}
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.modify_user_detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background-color: #be185d;
+  border: 1px solid #500724;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form_bg {
+  background-color: #da92b0;
+}
+.meassage_user_under {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #500724;
+  text-align: center;
+  width: 400px;
+}
+.add_desc {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+.title_req {
+  font-family: "Merriweather Sans", serif;
+}
+.desc_req {
+  font-family: "Merriweather Sans", serif;
+  font-style: italic;
+}
